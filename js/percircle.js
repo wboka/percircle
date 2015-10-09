@@ -28,7 +28,12 @@ jQuery(document).ready(function () {
 	function render( node, percentage, barColor, bgColor ){
 		var rotationMultiplier = 3.6;
 		var rotationDegrees = rotationMultiplier * percentage;
-		var isDark = $( node ).hasClass('dark');
+		
+		jQuery( node ).css('background-color', bgColor);
+		
+		jQuery( node ).append('<span class="percircle-amount">' + percentage + "%</span>");
+		
+		jQuery ( node ).add(jQuery( 'span', jQuery( node ) ) ).css('color', barColor);
 
 		jQuery( node ).find( '.bar' ).css({
 			'-webkit-transform' : 'rotate(' + rotationDegrees + 'deg)',
@@ -37,11 +42,12 @@ jQuery(document).ready(function () {
 			'-o-transform'      : 'rotate(' + rotationDegrees + 'deg)',
 			'transform'         : 'rotate(' + rotationDegrees + 'deg)'
 		});
-
+		
 		jQuery( node ).find( '.bar, .fill' ).css({
-			'background-color'	: isDark ? bgColor : barColor,
-			'border-color' 		: isDark ? bgColor : barColor,
-			'color'				: isDark ? bgColor : barColor
+			'background-color'	: barColor,
+			'border-color' 		: barColor,
+			'color'				: barColor
 		});
 	}
 });
+

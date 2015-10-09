@@ -9,8 +9,8 @@
 		<meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="js/rgbcolor.js"></script>
-        <script type="text/javascript" src="js/percircle.js"></script>
+        <script type="text/javascript" src="rgbcolor.js"></script>
+        <script type="text/javascript" src="percircle.js"></script>
 
         <!-- styles for this little demo page -->
         <style type="text/css">
@@ -27,7 +27,7 @@
                 margin: 40px 0 60px 0;
             }
         </style>
-        <link rel="stylesheet" href="css/percircle.css">
+        <link rel="stylesheet" href="percircle.css">
     </head>
 
     <body>
@@ -38,21 +38,18 @@
             <!-- some colors -->
             <div class="clearfix">
                 <div data-percircle="17" data-bar-color="green" data-bg-color="yellow" class="c100 big">
-                    <span>17%</span>
                     <div class="slice">
                         <div class="bar"></div>
                         <div class="fill"></div>
                     </div>
                 </div>
-				<div data-percircle="60" class="c100">
-                    <span>60%</span>
+				<div data-percircle="60" class="c100" data-bg-color="red">
                     <div class="slice">
                         <div class="bar"></div>
                         <div class="fill"></div>
                     </div>
                 </div>
-				<div data-percircle="94" class="c100 small">
-					<span>94%</span>
+				<div data-percircle="94" class="c100 small" data-bar-color="gold" data-bg-color="steelblue">
 					<div class="slice">
 						<div class="bar"></div>
 						<div class="fill"></div>
@@ -64,22 +61,19 @@
             <div class="dark-area clearfix">
 				<!-- some colors -->
                 <div class="clearfix">
-                    <div data-percircle="77" class="c100 dark big">
-                        <span>77%</span>
+                    <div data-percircle="77" class="c100 big" data-bar-color="gold" data-bg-color="white">
                         <div class="slice">
                             <div class="bar"></div>
                             <div class="fill"></div>
                         </div>
                     </div>
-                    <div data-percircle="50" class="c100 dark">
-                        <span>50%</span>
+                    <div data-percircle="50" class="c100 dark" data-bar-color="#123456" data-bg-color="#654321">
                         <div class="slice">
                             <div class="bar"></div>
                             <div class="fill"></div>
                         </div>
                     </div>
-                    <div data-percircle="33" class="c100 dark small">
-                        <span>33%</span>
+                    <div data-percircle="33" class="c100 dark small" data-bar-color="pink" data-bg-color="blue">
                         <div class="slice">
                             <div class="bar"></div>
                             <div class="fill"></div>
@@ -88,8 +82,9 @@
                 </div>
                 <!-- /some colors -->
 
-			</div><!-- /.dark-area -->
-			<small>Thodoris Bais | <a href="http://thodorisbais.blogspot.com" target="_blank">Blog</a></small>
+		</div><!-- /.dark-area -->
+		<small>Thodoris Bais | <a href="http://thodorisbais.blogspot.com" target="_blank">Blog</a></small>
         </div>
     </body>
 </html>
+

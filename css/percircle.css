@@ -1,4 +1,4 @@
-.rect-auto, .percircle.exceed .slice {
+.percircle.exceed .slice {
     clip: rect(auto, auto, auto, auto);
 }
 
@@ -38,7 +38,6 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    float: left;
     margin: 0 0.1em 0.1em 0;
 }
 
@@ -48,7 +47,6 @@
     box-sizing: content-box;
 }
 .percircle.center {
-    float: none;
     margin: 0 auto;
 }
 .percircle.percircle-big {
@@ -109,6 +107,7 @@
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
 }
+
 .percircle .slice {
     position: absolute;
     width: 1em;
@@ -119,6 +118,7 @@
 .percircle:hover {
     cursor: default;
 }
+
 .percircle:hover > span {
     width: 3.33em;
     line-height: 3.33em;
@@ -130,14 +130,3 @@
     width: 0.92em;
     height: 0.92em;
 }
-
-.dark-area {
-    background-color: #666;
-    padding: 40px;
-    margin: 0 -40px 20px -40px;
-    clear: both;
-}
-
-.clearfix:before,.clearfix:after {content: " "; display: table;}
-.clearfix:after {clear: both;}
-.clearfix {*zoom: 1;}

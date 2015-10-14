@@ -5,9 +5,6 @@
 		<title>percirle</title>
 		<meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="js/rgbcolor.js"></script>
-        <script type="text/javascript" src="js/percircle.js"></script>
 
         <!-- styles for this little demo page -->
         <style type="text/css">
@@ -24,7 +21,7 @@
 
             .clearfix:before,.clearfix:after { content: " "; display: table; }
             .clearfix:after { clear: both; }
-            .clearfix { *zoom: 1; }
+            .clearfix { zoom: 1; }
 
             .dark-area {
                 background-color: #666;
@@ -66,6 +63,14 @@
 
             <small>Thodoris Bais | <a href="http://thodorisbais.blogspot.com" target="_blank">Blog</a></small>
         </div>
+		
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/rgbcolor.js"></script>
+        <script type="text/javascript" src="js/percircle.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("div[data-percircle]").percircle();
+			});
+		</script>
     </body>
 </html>
-
